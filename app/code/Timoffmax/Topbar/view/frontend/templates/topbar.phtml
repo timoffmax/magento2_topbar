@@ -1,0 +1,11 @@
+<?php
+/** @var \Timoffmax\Topbar\Block\Header\Topbar $block */
+/** @var \Timoffmax\Topbar\Model\Topbar $topbar */
+?>
+<?php if ($block->isModuleEnabled()) : ?>
+    <?php foreach ($block->getAvailableStoreTopbars() as $topbar) : ?>
+        <div class="timoffmax-topbar-block" style="background-color: <?= $topbar->getBgColor() ?>;">
+            <?= $topbar->getContent() ?>
+        </div>
+    <?php endforeach; ?>
+<?php endif; ?>

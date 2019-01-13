@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Backend::marketing">
+                    <resource id="Timoffmax_Topbar::parent" title="Top Notification Bar" sortOrder="100">
+                        <resource id="Timoffmax_Topbar::index" title="View list" sortOrder="10"/>
+                        <resource id="Timoffmax_Topbar::manage" title="Manage" sortOrder="20"/>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

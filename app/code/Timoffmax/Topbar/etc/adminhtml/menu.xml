@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Timoffmax_Topbar::parent"
+             resource="Timoffmax_Topbar::index"
+             title="Notification"
+             module="Timoffmax_Topbar"
+             parent="Magento_Backend::marketing"
+             sortOrder="100"/>
+
+        <add id="Timoffmax_Topbar::index"
+             resource="Timoffmax_Topbar::index"
+             title="Top Information Bar"
+             action="timoffmax_topbar/index/index"
+             module="Timoffmax_Topbar"
+             sortOrder="10"
+             parent="Timoffmax_Topbar::parent"
+             dependsOnModule="Timoffmax_Topbar"/>
+    </menu>
+</config>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="timoffmax_topbar" frontName="timoffmax_topbar">
+            <module name="Timoffmax_Topbar"/>
+        </route>
+    </router>
+</config>
