@@ -16,6 +16,9 @@ use Magento\Framework\Exception\NoSuchEntityException;
 use Magento\Framework\Exception\CouldNotDeleteException;
 use Magento\Framework\Reflection\DataObjectProcessor;
 
+/**
+ * Class TopbarRepository
+ */
 class TopbarRepository implements TopbarRepositoryInterface
 {
     protected $topbarFactory;
@@ -104,69 +107,6 @@ class TopbarRepository implements TopbarRepositoryInterface
      */
     public function getList(SearchCriteriaInterface $criteria): TopbarSearchResultsInterface
     {
-//        $searchResults = $this->searchResultsFactory->create();
-//        $searchResults->setSearchCriteria($criteria);
-//        $collection = $this->collectionFactory->create();
-//
-//        foreach ($criteria->getFilterGroups() as $filterGroup) {
-//            foreach ($filterGroup->getFilters() as $filter) {
-//                if ($filter->getField() === 'store_id') {
-//                    $collection->addStoreFilter($filter->getValue(), false);
-//                    continue;
-//                }
-//                $condition = $filter->getConditionType() ?: 'eq';
-//                $collection->addFieldToFilter($filter->getField(), [$condition => $filter->getValue()]);
-//            }
-//        }
-//
-//        $searchResults->setTotalCount($collection->getSize());
-//        $sortOrders = $criteria->getSortOrders();
-//
-//        if ($sortOrders) {
-//            /** @var SortOrder $sortOrder */
-//            foreach ($sortOrders as $sortOrder) {
-//                $collection->addOrder(
-//                    $sortOrder->getField(),
-//                    ($sortOrder->getDirection() == SortOrder::SORT_ASC) ? 'ASC' : 'DESC'
-//                );
-//            }
-//        }
-//
-//        $collection->setCurPage($criteria->getCurrentPage());
-//        $collection->setPageSize($criteria->getPageSize());
-//        $pages = [];
-//
-//        foreach ($collection as $objectModel) {
-//            $objects[] = $objectModel;
-//        }
-//
-//
-////        foreach ($collection as $pageModel) {
-////            $pageData = $this->dataPageFactory->create();
-////            $this->dataObjectHelper->populateWithArray(
-////                $pageData,
-////                $pageModel->getData(),
-////                'Namespace\Module\Api\Data\YourmodelInterface'
-////            );
-////            $pages[] = $this->dataObjectProcessor->buildOutputDataArray(
-////                $pageData,
-////                'Namespace\Module\Api\Data\YourmodelInterface'
-////            );
-////        }
-//
-//        $searchResults->setItems($pages);
-//
-//        return $searchResults;
-
-
-
-
-
-
-
-
-
-
         $searchResults = $this->searchResultsFactory->create();
         $searchResults->setSearchCriteria($criteria);  
         $collection = $this->collectionFactory->create();

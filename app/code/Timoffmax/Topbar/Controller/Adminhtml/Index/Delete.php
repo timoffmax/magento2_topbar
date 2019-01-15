@@ -7,6 +7,9 @@ use Timoffmax\Topbar\Model\TopbarRepository;
 use Magento\Backend\App\Action\Context;
 use Magento\Backend\App\Action;
 
+/**
+ * Class Delete
+ */
 class Delete extends Action
 {
     /**

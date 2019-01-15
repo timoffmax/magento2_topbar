@@ -99,9 +99,9 @@ abstract class AbstractCollection extends \Magento\Framework\Model\ResourceModel
      *
      * @param array|string $field
      * @param string|int|array|null $condition
-     * @return $this
+     * @return \Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection
      */
-    public function addFieldToFilter($field, $condition = null)
+    public function addFieldToFilter($field, $condition = null): \Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection
     {
         if ($field === 'store_id') {
             return $this->addStoreFilter($condition, false);

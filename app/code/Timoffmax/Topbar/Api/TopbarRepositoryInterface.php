@@ -9,6 +9,7 @@ use Magento\Framework\Api\SearchCriteriaInterface;
 
 /**
  * Interface TopbarRepositoryInterface
+ * @api
  */
 interface TopbarRepositoryInterface
 {

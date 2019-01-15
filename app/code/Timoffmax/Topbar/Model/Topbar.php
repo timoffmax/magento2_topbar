@@ -2,10 +2,14 @@
 
 namespace Timoffmax\Topbar\Model;
 
-use Magento\Framework\DataObject\IdentityInterface;
-use Magento\Framework\Model\AbstractModel;
 use Timoffmax\Topbar\Api\Data\TopbarInterface;
 
+use Magento\Framework\DataObject\IdentityInterface;
+use Magento\Framework\Model\AbstractModel;
+
+/**
+ * Class Topbar
+ */
 class Topbar extends AbstractModel implements IdentityInterface, TopbarInterface
 {
     /**

@@ -6,6 +6,9 @@ use Magento\Backend\App\Action\Context;
 use Magento\Framework\View\Result\PageFactory;
 use Magento\Backend\App\Action;
 
+/**
+ * Class Index
+ */
 class Index extends Action
 {
     /**

@@ -4,9 +4,15 @@ namespace Timoffmax\Topbar\Block\Adminhtml\Topbar\Edit;
 
 use Magento\Framework\View\Element\UiComponent\Control\ButtonProviderInterface;
 
+/**
+ * Class ResetButton
+ */
 class ResetButton extends GenericButton implements ButtonProviderInterface
-{     
-    public function getButtonData()
+{
+    /**
+     * @return array
+     */
+    public function getButtonData(): array
     {
         return [
             'label' => __('Reset'),

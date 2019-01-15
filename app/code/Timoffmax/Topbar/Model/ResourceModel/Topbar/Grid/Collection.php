@@ -2,12 +2,13 @@
 
 namespace Timoffmax\Topbar\Model\ResourceModel\Topbar\Grid;
 
-use Magento\Framework\Api\Search\SearchResultInterface;
-use Magento\Framework\Api\Search\AggregationInterface;
 use Timoffmax\Topbar\Model\ResourceModel\Topbar\Collection as TopbarCollection;
 
+use Magento\Framework\Api\Search\SearchResultInterface;
+use Magento\Framework\Api\Search\AggregationInterface;
+
 /**
- * Collection for displaying grid of topbar
+ * Collection for displaying grid of topbars
  */
 class Collection extends TopbarCollection implements SearchResultInterface
 {

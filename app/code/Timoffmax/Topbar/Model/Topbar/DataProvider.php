@@ -3,12 +3,16 @@
 namespace Timoffmax\Topbar\Model\Topbar;
 
 use Timoffmax\Topbar\Model\ResourceModel\Topbar\CollectionFactory;
+
 use Magento\Framework\App\Request\DataPersistorInterface;
 use Magento\Ui\DataProvider\AbstractDataProvider;
 
+/**
+ * Class DataProvider
+ */
 class DataProvider extends AbstractDataProvider
 {
-
+    /** @var \Timoffmax\Topbar\Model\ResourceModel\Topbar\Collection  */
     protected $collection;
 
     /**

@@ -22,9 +22,9 @@ class Collection extends AbstractCollection
     /**
      * Perform operations after collection load
      *
-     * @return $this
+     * @return AbstractCollection
      */
-    protected function _afterLoad()
+    protected function _afterLoad(): AbstractCollection
     {
         $entityMetadata = $this->metadataPool->getMetadata(TopbarInterface::class);
 

@@ -2,7 +2,6 @@
 
 namespace Timoffmax\Topbar\Model\ResourceModel;
 
-use Magento\Framework\Exception\LocalizedException;
 use Timoffmax\Topbar\Api\Data\TopbarInterface;
 
 use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
@@ -13,7 +12,12 @@ use Magento\Framework\EntityManager\MetadataPool;
 use Magento\Framework\Model\AbstractModel;
 use Magento\Framework\DB\Select;
 use Magento\Store\Model\Store;
+use Magento\Framework\Exception\LocalizedException;
 
+/**
+ * Class Topbar
+ * @package Timoffmax\Topbar\Model\ResourceModel
+ */
 class Topbar extends AbstractDb
 {
     /**

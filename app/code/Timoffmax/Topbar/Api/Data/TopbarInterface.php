@@ -2,6 +2,10 @@
 
 namespace Timoffmax\Topbar\Api\Data;
 
+/**
+ * Interface TopbarInterface
+ * @api
+ */
 interface TopbarInterface
 {
     public const ID = 'topbar_id';

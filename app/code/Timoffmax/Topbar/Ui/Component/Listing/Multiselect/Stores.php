@@ -5,7 +5,9 @@ namespace Timoffmax\Topbar\Ui\Component\Listing\Multiselect;
 use Magento\Store\Ui\Component\Listing\Column\Store\Options as StoreOptions;
 
 /**
- * Store Options
+ * Class Stores
+ *
+ * Provides store options
  */
 class Stores extends StoreOptions
 {

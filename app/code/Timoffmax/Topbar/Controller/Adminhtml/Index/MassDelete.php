@@ -10,6 +10,9 @@ use Magento\Ui\Component\MassAction\Filter;
 use Magento\Backend\App\Action;
 use Magento\Backend\App\Action\Context;
 
+/**
+ * Class MassDelete
+ */
 class MassDelete extends Action implements HttpPostActionInterface
 {
     /**

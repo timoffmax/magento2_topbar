@@ -14,8 +14,13 @@ use Magento\Framework\Api\SortOrderBuilder;
 use Magento\Framework\View\Element\Template;
 use Magento\Framework\View\Element\Template\Context;
 
+/**
+ * Class Topbar
+ */
 class Topbar extends Template
 {
+    public const CONFIG_PATH_ENABLED = 'timoffmax_topbar/general/enabled';
+
     /** @var TopbarRepositoryInterface */
     private $topbarRepository;
 
@@ -28,6 +33,15 @@ class Topbar extends Template
     /** @var ScopeConfigInterface */
     private $scopeConfig;
 
+    /**
+     * Topbar constructor.
+     * @param TopbarRepositoryInterface $topbarRepository
+     * @param SearchCriteriaBuilder $searchCriteriaBuilder
+     * @param SortOrderBuilder $sortOrderBuilder
+     * @param ScopeConfigInterface $scopeConfig
+     * @param Context $context
+     * @param array $data
+     */
     public function __construct(
         TopbarRepositoryInterface $topbarRepository,
         SearchCriteriaBuilder $searchCriteriaBuilder,
@@ -82,7 +96,7 @@ class Topbar extends Template
     public function isModuleEnabled(): bool
     {
         return $this->scopeConfig->getValue(
-            'timoffmax_topbar/general/enabled',
+            self::CONFIG_PATH_ENABLED,
             ScopeInterface::SCOPE_STORE
         );
     }

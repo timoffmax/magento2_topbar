@@ -2,13 +2,17 @@
 
 namespace Timoffmax\Topbar\Controller\Adminhtml\Index;
 
+use Timoffmax\Topbar\Model\TopbarRepository;
+
 use Magento\Backend\App\Action;
 use Magento\Backend\App\Action\Context;
 use Magento\Framework\App\Request\DataPersistorInterface;
 use Magento\Framework\Exception\LocalizedException;
 
-use Timoffmax\Topbar\Model\TopbarRepository;
-
+/**
+ * Class Save
+ * @package Timoffmax\Topbar\Controller\Adminhtml\Index
+ */
 class Save extends Action
 {
     /**

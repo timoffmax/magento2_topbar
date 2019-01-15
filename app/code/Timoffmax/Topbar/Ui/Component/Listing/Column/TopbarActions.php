@@ -2,8 +2,15 @@
 
 namespace Timoffmax\Topbar\Ui\Component\Listing\Column;
 
+/**
+ * Class TopbarActions
+ */
 class TopbarActions extends \Magento\Ui\Component\Listing\Columns\Column
 {
+    /**
+     * @param array $dataSource
+     * @return array
+     */
     public function prepareDataSource(array $dataSource)
     {
         if (isset($dataSource["data"]["items"])) {
