@@ -1,4 +1,4 @@
-# Magneto 2 Timoffmax_Topbar
+# Magento 2 Timoffmax_Topbar
 
 Top Information Bar allows to draw the attention of visitors and engage them to introduce new offers, discount, deals, cookie restriction policy information
 etc.
