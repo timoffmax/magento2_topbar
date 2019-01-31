@@ -9,5 +9,7 @@ You can set up dedicated top bars for different store views and also set up seve
 - Magento >= 2.2
 
 ## Installation
+- Create a folder `mkdir -p app/code/Timoffmax/Topbar`
+- Copy module's content to `app/code/Timoffmax/Topbar`
 - `bin/magento module:enable Timoffmax_Topbar`
 - `bin/magento setup:uprgade`
