@@ -15,7 +15,7 @@ You can set up dedicated top bars for different store views and also set up seve
 - `bin/magento setup:uprgade`
 
 ## Configuration
-1. Enable the module in **Stores -> Settings -> Configuration -> CTI Digital -> Despatch Countdown Timer**.
+1. Enable the module in **Stores -> Settings -> Configuration -> Timoffmax -> Top Information Bar**.
 2. Add your topbar in **Marketing -> Notification -> Top Information Bar**.
 3. Flush cache.
 
